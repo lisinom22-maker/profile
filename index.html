@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f40c3f">
+  <meta name="description" content="A personal portfolio — ideas, design and creative development.">
+  <title>Your Name — Creative Developer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' fill='%23f40c3f'/%3E%3Cpath d='M12 10v30m9-30v30m9-30v30m9-30v30' stroke='%23160000' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/editorial.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("intro-active");window.__introFailsafe=setTimeout(()=>{window.portfolioIntro?.finish();document.documentElement.classList.remove("intro-active");document.querySelector(".page")?.removeAttribute("inert");document.querySelector(".site-intro")?.setAttribute("hidden","");},9000);</script>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="profile.js"></script>
+  <script defer src="contact-scene.js"></script>
+  <script defer src="way-scene.js"></script>
+  <script defer src="intro.js"></script>
+  <script defer src="falling-panels.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="scroll-progress.js"></script>
+</head>
+<body>
+  <div class="site-intro" hidden aria-hidden="true"><div class="intro-veil"></div><svg class="intro-logo" viewBox="0 0 502 509" aria-hidden="true"><defs><clipPath id="intro-column-0"><rect width="502" height="0" y="509"/></clipPath><clipPath id="intro-column-1"><rect width="502" height="0" y="509"/></clipPath><clipPath id="intro-column-2"><rect width="502" height="0" y="509"/></clipPath><clipPath id="intro-column-3"><rect width="502" height="0" y="509"/></clipPath><clipPath id="intro-column-4"><rect width="502" height="0" y="509"/></clipPath></defs><g data-column="0" clip-path="url(#intro-column-0)"><rect width="77" height="509"/></g><g data-column="1" clip-path="url(#intro-column-1)"><rect x="96" y="178" width="68" height="331"/></g><g data-column="2" clip-path="url(#intro-column-2)"><rect x="181" width="75" height="509"/></g><g data-column="3" clip-path="url(#intro-column-3)"><rect x="287" width="74" height="509"/></g><g data-column="4" clip-path="url(#intro-column-4)"><path d="M432 0h70v175h-70zM432 334h70v175h-70z"/></g><g data-rail><rect x="287" width="215" height="18"/><rect x="287" y="491" width="215" height="18"/></g></svg><div class="intro-rule"></div><div class="intro-lower"></div><div class="intro-border"></div></div>
+  <a class="skip-link" href="#about">跳到自我介绍</a>
+  <div class="page" id="top">
+    <header class="header">
+      <a href="#top" class="monogram" aria-label="返回首页"><svg viewBox="0 0 502 509" aria-hidden="true"><rect width="77" height="509"/><rect x="96" y="178" width="68" height="331"/><rect x="181" width="75" height="509"/><rect x="287" width="74" height="509"/><path d="M432 0h70v175h-70zM432 334h70v175h-70z"/><rect x="287" width="215" height="18"/><rect x="287" y="491" width="215" height="18"/></svg></a>
+      <div class="console" aria-hidden="true"><span>IDEAS INTO EXPERIENCES…</span><span>ALWAYS A WORK IN PROGRESS<span class="caret">_</span></span></div>
+      <nav aria-label="主导航"><a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#contact">CONTACT</a></nav>
+      <div class="utility"><button id="motion-toggle" title="暂停动态效果" aria-label="暂停动态效果" aria-pressed="false"><span class="pause-mark" aria-hidden="true"></span></button><span class="github-decoration" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.922c.563.104.768-.244.768-.542 0-.267-.01-.975-.015-1.914-3.13.68-3.79-1.51-3.79-1.51-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.078-.686.078-.686 1.132.08 1.728 1.163 1.728 1.163 1.006 1.724 2.64 1.226 3.282.937.102-.728.393-1.226.715-1.508-2.498-.284-5.124-1.25-5.124-5.563 0-1.229.44-2.233 1.16-3.02-.117-.285-.504-1.43.11-2.979 0 0 .945-.302 3.094 1.154A10.79 10.79 0 0 1 12 6.18c.956.004 1.918.13 2.818.379 2.148-1.456 3.09-1.154 3.09-1.154.617 1.55.23 2.694.114 2.979.72.787 1.157 1.791 1.157 3.02 0 4.325-2.63 5.276-5.136 5.555.404.35.765 1.043.765 2.102 0 1.517-.014 2.74-.014 3.112 0 .3.203.651.774.54A11.25 11.25 0 0 0 12 .75Z"/></svg></span></div>
+      <button id="theme-toggle" aria-label="切换浅色对比模式" aria-pressed="false"><span class="contrast-mark" aria-hidden="true"></span></button>
+      <div class="availability"><span id="location-text">Creating from everywhere.</span><a href="#contact"><span id="availability-text">Open for new possibilities</span> → <b>Say hello</b></a></div>
+      <div class="header-contact" aria-hidden="true"></div>
+      <button class="mobile-menu" aria-label="打开导航" aria-expanded="false">MENU</button>
+    </header>
+    <main>
+      <section class="hero" aria-label="交互波浪线条"><canvas id="waves" aria-hidden="true"></canvas></section>
+      <div class="ticker" aria-hidden="true"></div>
+      <h1 class="hero-title" aria-label="Creative Developer"><span class="word" data-title="0"></span><span class="star" aria-hidden="true"></span><span class="word" data-title="1"></span></h1>
+      <div class="ticker" aria-hidden="true"></div>
+      <section class="about" id="about" aria-labelledby="about-heading">
+        <svg class="about-grid" aria-hidden="true" preserveAspectRatio="none"><path fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>
+        <div class="about-center"><h2 class="section-label" id="about-heading">ABOUT</h2><div class="bio" id="bio"></div>
+          <h2 class="section-label">EXPLORATIONS & CAPABILITIES</h2>
+          <div class="skills-grid">
+            <div class="skill editorial wide">A little bit of this.<br>A little bit of that.</div>
+            <div class="skill display tall">CREA<br>TIVE<span class="skill-caption">Curiosity is my starting point.</span></div>
+            <div class="skill editorial">I just like<br>making things.</div>
+            <div class="skill hatch" aria-hidden="true"></div>
+            <div class="skill display small">WEB<span class="skill-caption">Interfaces & interaction</span></div>
+            <div class="skill editorial wide">Sometimes it works.<br>Sometimes it doesn't.</div>
+            <div class="skill globe" aria-hidden="true"><svg viewBox="0 0 140 140"><circle cx="70" cy="70" r="52"/><ellipse cx="70" cy="70" rx="28" ry="52"/><ellipse cx="70" cy="70" rx="11" ry="52"/><ellipse cx="70" cy="70" rx="52" ry="18"/><path d="M18 70h104M29 40h82M29 100h82"/></svg></div>
+            <div class="skill display small two">CODE<span class="skill-caption">Creative development<br>Always learning</span></div>
+            <div class="skill hatch" aria-hidden="true"></div>
+            <div class="skill editorial half">Some things<br>were easy.<br>Most things<br>weren't.</div><div class="skill editorial half"></div>
+          </div>
+        </div>
+      </section>
+      <div class="ticker" aria-hidden="true"></div>
+      <section class="work" id="work" aria-labelledby="work-heading">
+        <h2 id="work-heading" class="sr-only">Selected work / 作品预留位置</h2>
+        <div class="work-sticky"><div class="work-grid" aria-hidden="true"></div><div class="work-portal"><canvas id="work-type" aria-hidden="true"></canvas></div><div class="projects" id="projects"></div></div>
+      </section>
+      <div class="ticker" aria-hidden="true"></div>
+      <section class="my-way" aria-label="My way"><div class="way-sticky"><canvas id="rays" aria-hidden="true"></canvas><span class="smiley" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><g transform="rotate(-120 50 50)"><path d="M25 51C23 86 77 86 75 51" stroke-linecap="round"/><path class="smiley-eyes" d="M32 28C24 28 24 46 32 46C36 46 38 41 37 37C33 39 30 35 33 32C35 31 34 28 32 28ZM68 28C60 28 60 46 68 46C72 46 74 41 73 37C69 39 66 35 69 32C71 31 70 28 68 28Z"/></g></svg></span><div class="perspective-copy"><div id="way-line-one">CREATING</div><div>MY OWN WAY</div><div>SINCE</div><div id="since-year">2026</div></div></div></section>
+      <canvas id="way-bridge" aria-hidden="true"></canvas>
+      <section class="contact" id="contact" aria-label="联系我">
+        <canvas id="contact-grid" aria-hidden="true"></canvas>
+        <button class="go-button" aria-label="GO，展开联系方式" aria-expanded="false" aria-controls="contact-content"><span class="sr-only">GO</span></button>
+        <div class="contact-content" id="contact-content" aria-hidden="true" inert>
+          <h2 class="sr-only">LET’S ROCK</h2>
+          <a id="email-link" hidden></a>
+          
+          <button class="close-contact" aria-label="收起联系方式" tabindex="-1">×</button>
+        </div>
+      </section>
+    </main>
+    <footer><a href="#top" class="monogram" aria-label="返回顶部"><svg viewBox="0 0 502 509" aria-hidden="true"><rect width="77" height="509"/><rect x="96" y="178" width="68" height="331"/><rect x="181" width="75" height="509"/><rect x="287" width="74" height="509"/><path d="M432 0h70v175h-70zM432 334h70v175h-70z"/><rect x="287" width="215" height="18"/><rect x="287" y="491" width="215" height="18"/></svg></a><span id="footer-name">YOUR NAME © 2026</span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+  </div>
+  <dialog id="project-dialog"><button class="close-dialog" aria-label="关闭作品详情">CLOSE ×</button><div class="dialog-art"></div><p class="eyebrow">SELECTED EXPLORATION</p><h2></h2><p class="dialog-description"></p><a class="project-link" target="_blank" rel="noopener noreferrer">VISIT PROJECT ↗</a></dialog>
+  <div id="scroll-progress" aria-hidden="true"></div>
+</body>
+</html>
